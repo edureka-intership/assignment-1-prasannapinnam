@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <link rel="icon" href="/images/zomatoicon.png" />
+    <title>choose your favourite food</title>
+    <link rel="stylesheet" href="listing.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zomato</h1>
+      <button>login</button>
+      <button>signup</button>
+    </header>
+
+    <section class="main">
+      <!--filter section-->
+      <section class="filter">
+        <h2>Filters</h2>
+        <div class="filterFlex">
+          <div class="filterFlexItem Location">
+            <label for="location">select location</label>
+            <select id="location">
+              <option value="" disabled selected hidden>select location</option>
+            </select>
+          </div>
+          <div class="filterFlexItem Cuisine">
+            <h3>category</h3>
+            <div class="cuisineItem">
+              <input type="checkbox" id="breakfast" name="" value="" />
+              <label for="breakfast">breakfast</label>
+            </div>
+            <div class="cuisineItem">
+              <input type="checkbox" id="lunch" name="" value="" />
+              <label for="lunch">lunch</label>
+            </div>
+            <div class="cuisineItem">
+              <input type="checkbox" id="NVfastFood" name="" value="" />
+              <label for="NVfastFood">NV and fastFood</label>
+            </div>
+            <div class="cuisineItem">
+              <input type="checkbox" id="pizzaitem" name="" value="" />
+              <label for="pizzaitem">pizza,burger,fries</label>
+            </div>
+            <div class="cuisineItem">
+              <input type="checkbox" id="shakes" name="" value="" />
+              <label for="shakes">juices and shakes</label>
+            </div>
+            <div class="cuisineItem">
+              <input type="checkbox" id="cakes" name="" value="" />
+              <label for="cakes">cakes and bakery</label>
+            </div>
+          </div>
+
+          <div class="filterFlexItem costForTwo">
+            <h3>cost for two</h3>
+            <div class="priceItem">
+              <input type="radio" id="less" name="price" value="" />
+              <label for="less"
+                >less than
+                <i class="fa fa-rupee" style="font-size: 15px"></i> 500</label
+              >
+            </div>
+            <div class="priceItem">
+              <input type="radio" id="medium" name="price" value="" />
+              <label for="medium">
+                <i class="fa fa-rupee" style="font-size: 15px"></i>500 to
+                <i class="fa fa-rupee" style="font-size: 15px"></i>1000</label
+              >
+            </div>
+            <div class="priceItem">
+              <input type="radio" id="moderate" name="price" value="" />
+              <label for="moderate">
+                <i class="fa fa-rupee" style="font-size: 15px"></i>1000 to
+                <i class="fa fa-rupee" style="font-size: 15px"></i>1500
+              </label>
+            </div>
+            <div class="priceItem">
+              <input type="radio" id="high" name="price" value="" />
+              <label for="high">
+                <i class="fa fa-rupee" style="font-size: 15px"></i>1500 to
+                <i class="fa fa-rupee" style="font-size: 15px"></i>2000</label
+              >
+            </div>
+            <div class="priceItem">
+              <input type="radio" id="lavish" name="price" value="" />
+              <label for="lavish">
+                <i class="fa fa-rupee" style="font-size: 15px"></i>2000+</label
+              >
+            </div>
+          </div>
+
+          <div class="filterFlexItem sortOnPrice">
+            <h2>sort on price</h2>
+            <div class="sortItem">
+              <input type="radio" id="increasing" name="sort" value="" />
+              <label for="increasing">low to high</label>
+            </div>
+            <div class="sortItem">
+              <input type="radio" id="decreasing" name="sort" value="" />
+              <label for="decreasing">high to low</label>
+            </div>
+          </div>
+
+          <div class="filterFlexItem">
+            <button class="filterbutton">apply</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- items-->
+      <section class="items">
+        <div class="itemsFlex">
+          <div class="itemTile">
+            <img src="../images/listing/kfc.jpg" alt="kfc" />
+            <div class="textTile">
+              <div class="rating">
+                <h2>KFC</h2>
+                <p>4.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>NV and fastFood</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>500 for one
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="itemTile">
+            <img src="../images/listing/milkshake.png" alt="juice and shakes" />
+            <div class="textTile">
+              <div class="rating">
+                <h2>drunkenMonkey</h2>
+                <p>5.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>juices and shakes</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>300 for one
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="itemTile">
+            <img
+              src="../images/listing/southIndianBreakfast.jpg"
+              alt="Breakfast"
+            />
+            <div class="textTile">
+              <div class="rating">
+                <h2>taste the South</h2>
+                <p>5.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>breakfast</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>100 for one
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="itemTile">
+            <img src="../images/listing/pizza.jpg" alt="fastFood" />
+            <div class="textTile">
+              <div class="rating">
+                <h2>dominos</h2>
+                <p>4.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>pizza,burger,fries</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>500 for one
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="itemTile">
+            <img src="../images/listing/cakes.jpg" alt="cakeAndBakery" />
+            <div class="textTile">
+              <div class="rating">
+                <h2>karachi bakery</h2>
+                <p>4.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>cakes and bakery</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>300 for one
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="itemTile">
+            <img src="../images/listing/southIndianMeal.jpg" alt="Meals" />
+            <div class="textTile">
+              <div class="rating">
+                <h2>ramaiah mess</h2>
+                <p>5.0 <span class="fa fa-star" style="color: white"></span></p>
+              </div>
+              <div class="price">
+                <p>lunch</p>
+                <span>
+                  <i class="fa fa-rupee" style="font-size: 15px"></i>200 for one
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </section>
+
+    <!--banner section-->
+    <section class="banner">
+      <div class="bannerInnerFlex">
+        <div class="bannerInnerItem bannerIn1">
+          <h2>About Zomato</h2>
+          <a href="#">
+            <p>who we are</p>
+          </a>
+          <a href="#">
+            <p>investors</p>
+          </a>
+          <a href="#">
+            <p>careers</p>
+          </a>
+          <a href="#">
+            <p>contact-us</p>
+          </a>
+          <a href="#">
+            <p>newsroom</p>
+          </a>
+          <a href="#">
+            <p>home</p>
+          </a>
+        </div>
+        <div class="bannerInnerItem bannerIn2">
+          <h2>Zomaverse</h2>
+          <a href="#">
+            <p>feeding india</p>
+          </a>
+          <a href="#">
+            <p>hyperpure</p>
+          </a>
+          <a href="#">
+            <p>cities we available</p>
+          </a>
+          <a href="#">
+            <p>zomato</p>
+          </a>
+        </div>
+        <div class="bannerInnerItem bannerIn3">
+          <h2>For Restaurants</h2>
+          <a href="#">
+            <p>partner with us</p>
+          </a>
+          <a href="#">
+            <p>apps for you</p>
+          </a>
+          <br />
+          <h2>For Enterprises</h2>
+          <a href="#">
+            <p>work for zomato</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer part -->
+    <footer>
+      <div class="footerFlex">
+        <h2>Zomato</h2>
+        <h2>&copy; created by prasannapinnam</h2>
+        <div>
+          <a style="text-decoration: none" href="#"
+            ><i class="fa fa-facebook footerIcons"></i>
+          </a>
+          <a style="text-decoration: none" href="#"
+            ><i class="fa fa-pinterest footerIcons"></i>
+          </a>
+          <a style="text-decoration: none" href="#"
+            ><i class="fa fa-instagram footerIcons"></i>
+          </a>
+          <a style="text-decoration: none" href="#"
+            ><i class="fa fa-twitter footerIcons"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
